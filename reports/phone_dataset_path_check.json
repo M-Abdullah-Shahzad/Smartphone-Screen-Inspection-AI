@@ -1,0 +1,29 @@
+{
+  "project_root": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai",
+  "source_config": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\configs\\phone.yaml",
+  "runtime_resolution": "The training script resolves the portable YAML path against the project configuration location and passes a temporary absolute-path YAML to Ultralytics.",
+  "resolved_paths": {
+    "train": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection\\images\\train",
+    "val": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection\\images\\val",
+    "test": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection\\images\\test"
+  },
+  "path_exists": {
+    "train": true,
+    "val": true,
+    "test": true
+  },
+  "image_counts": {
+    "train": 70,
+    "val": 15,
+    "test": 15
+  },
+  "label_counts": {
+    "train": 70,
+    "val": 15,
+    "test": 15
+  },
+  "ultralytics_resolution_verified": true,
+  "status": "PASS",
+  "training_started": false,
+  "raw_or_processed_data_modified": false
+}

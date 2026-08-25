@@ -1,0 +1,43 @@
+{
+  "project_root": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai",
+  "inspected_roots": [
+    "datasets/phone_dataset",
+    "datasets/defect_dataset",
+    "processed/phone_detection",
+    "processed/defect_segmentation"
+  ],
+  "screen_annotations": {
+    "annotation_files_scanned": 200,
+    "screen_annotation_file_count": 0,
+    "screen_annotations_exist": false,
+    "formats": {},
+    "images_with_screen_annotations": 0,
+    "matches": []
+  },
+  "segmentation_mask_analysis": {
+    "mask_file_count": 1200,
+    "mask_formats": {
+      ".png": 1200
+    },
+    "unique_dimensions": {
+      "1920x1080": 1200
+    },
+    "unique_pixel_values": {
+      "0": 2469132537,
+      "1": 15448812,
+      "2": 545370,
+      "3": 3193281
+    },
+    "foreground_ratio": {
+      "min": 8.63233024691358e-05,
+      "max": 0.15767698688271606,
+      "mean": 0.007711011043595679,
+      "large_mask_count_ratio_at_least_50_percent": 0
+    },
+    "invalid_mask_files": [],
+    "screen_like_mask_evidence": false,
+    "interpretation": "These files are treated as defect masks based on their source folders; mask statistics alone do not establish screen-region annotations."
+  },
+  "screen_information_available": false,
+  "conclusion": "No explicit screen annotations were found; existing masks are defect-mask artifacts and do not provide reliable screen-region labels."
+}

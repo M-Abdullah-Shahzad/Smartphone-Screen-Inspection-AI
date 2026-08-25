@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phone screen check</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #18212b; background: #eef2f5; }
+    body { max-width: 560px; margin: 0 auto; padding: 24px 16px; }
+    h1 { font-size: 1.7rem; margin: 12px 0 20px; }
+    button, input { font: inherit; }
+    .upload { display: block; width: 100%; padding: 18px; border: 0; border-radius: 12px; background: #1d6fd1; color: white; font-weight: 700; cursor: pointer; text-align: center; }
+    .upload input { display: none; }
+    .card { margin-top: 18px; padding: 22px; border-radius: 14px; color: white; background: #66717d; }
+    .card.clean { background: #21864b; } .card.defect { background: #c83d3d; } .card.unsure { background: #d47718; }
+    .card h2 { margin: 0 0 10px; font-size: 1.45rem; } .card p { margin: 8px 0; }
+    .details { margin-top: 16px; background: white; border-radius: 10px; padding: 12px; }
+    .details p { margin: 8px 0; }
+    [hidden] { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Check your phone screen</h1>
+  <label class="upload">Upload phone photo<input id="file" type="file" accept="image/*"></label>
+  <section id="card" class="card" hidden>
+    <h2 id="result"></h2><p id="message"></p><p id="defects"></p><p id="area"></p><p id="locations"></p><p id="advice"></p>
+  </section>
+  <details class="details" hidden id="technical"><summary>Show details</summary><p id="quality"></p><p id="phone"></p><p id="screen"></p><p id="weak"></p></details>
+  <script>
+    const file = document.getElementById('file'), card = document.getElementById('card'), technical = document.getElementById('technical');
+    file.addEventListener('change', async () => {
+      if (!file.files[0]) return;
+      const data = new FormData(); data.append('file', file.files[0]);
+      card.hidden = false; card.className = 'card unsure'; document.getElementById('result').textContent = 'Checking...';
+      const response = await fetch('/predict', { method: 'POST', body: data });
+      const payload = await response.json(); const simple = payload.simple || {}; const tech = payload.technical || {}; const statuses = tech.statuses || {};
+      card.className = 'card ' + (simple.result === 'OK' ? 'clean' : simple.result === 'DEFECT FOUND' || simple.result === 'MULTIPLE DEFECTS' ? 'defect' : simple.result === 'NOT SURE' ? 'unsure' : '');
+      document.getElementById('result').textContent = simple.result || 'Not sure'; document.getElementById('message').textContent = simple.message || '';
+      document.getElementById('defects').textContent = simple.defects_simple?.length ? 'Defects: ' + simple.defects_simple.join(', ') : '';
+      document.getElementById('area').textContent = simple.affected_area ? 'Affected area: ' + simple.affected_area : '';
+      document.getElementById('locations').textContent = simple.locations?.length ? 'Locations: ' + simple.locations.join(', ') : '';
+      document.getElementById('advice').textContent = simple.advice || ''; technical.hidden = false;
+      const sure = confidence => confidence >= .7 ? 'very sure' : confidence >= .4 ? 'fairly sure' : confidence >= .25 ? 'likely' : confidence >= .1 ? 'weak sign' : 'none';
+      document.getElementById('quality').textContent = 'Photo quality: ' + (tech.blur_score < 50 ? 'blurry' : 'good');
+      document.getElementById('phone').textContent = 'Phone found: ' + (statuses.phone_status === 'PHONE_DETECTED' ? 'yes, ' + sure(statuses.phone_confidence) : 'no');
+      document.getElementById('screen').textContent = 'Screen found: ' + (statuses.screen_status === 'SCREEN_NORMALIZED' ? 'yes, ' + sure(statuses.screen_confidence) : 'no');
+      const weak = (tech.defects || []).filter(defect => defect.confidence >= .1 && defect.confidence < .25).map(defect => 'possible ' + defect.class_name + ' (weak sign)');
+      document.getElementById('weak').textContent = weak.length ? 'Weak signs seen: ' + [...new Set(weak)].join(', ') : '';
+    });
+  </script>
+</body>
+</html>

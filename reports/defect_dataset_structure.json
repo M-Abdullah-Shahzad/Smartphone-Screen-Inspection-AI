@@ -1,0 +1,2565 @@
+{
+  "dataset_name": "defect_dataset",
+  "root": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\datasets\\defect_dataset",
+  "folder_roles": {
+    "good": {
+      "role": "images",
+      "file_count": 20,
+      "extensions": {
+        ".png": 20
+      },
+      "dimensions_and_modes": {
+        "1920x1080/RGB": 20
+      }
+    },
+    "ground_truth_1": {
+      "role": "masks",
+      "file_count": 800,
+      "extensions": {
+        ".png": 800
+      },
+      "dimensions_and_modes": {
+        "1920x1080/P": 800
+      }
+    },
+    "ground_truth_2": {
+      "role": "masks",
+      "file_count": 400,
+      "extensions": {
+        ".png": 400
+      },
+      "dimensions_and_modes": {
+        "1920x1080/P": 400
+      }
+    },
+    "oil": {
+      "role": "images",
+      "file_count": 400,
+      "extensions": {
+        ".jpg": 400
+      },
+      "dimensions_and_modes": {
+        "1920x1080/RGB": 400
+      }
+    },
+    "scratch": {
+      "role": "images",
+      "file_count": 400,
+      "extensions": {
+        ".jpg": 400
+      },
+      "dimensions_and_modes": {
+        "1920x1080/RGB": 400
+      }
+    },
+    "stain": {
+      "role": "images",
+      "file_count": 400,
+      "extensions": {
+        ".jpg": 400
+      },
+      "dimensions_and_modes": {
+        "1920x1080/RGB": 400
+      }
+    }
+  },
+  "mask_to_image_mapping": {
+    "ground_truth_1": {
+      "mask_count": 800,
+      "matched_mask_count": 800,
+      "missing_image_for_mask": [],
+      "samples": [
+        {
+          "mask": "Scr_0001.png",
+          "images": [
+            "scratch\\Scr_0001.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0002.png",
+          "images": [
+            "scratch\\Scr_0002.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0003.png",
+          "images": [
+            "scratch\\Scr_0003.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0004.png",
+          "images": [
+            "scratch\\Scr_0004.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0005.png",
+          "images": [
+            "scratch\\Scr_0005.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0006.png",
+          "images": [
+            "scratch\\Scr_0006.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0007.png",
+          "images": [
+            "scratch\\Scr_0007.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0008.png",
+          "images": [
+            "scratch\\Scr_0008.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0009.png",
+          "images": [
+            "scratch\\Scr_0009.jpg"
+          ]
+        },
+        {
+          "mask": "Scr_0010.png",
+          "images": [
+            "scratch\\Scr_0010.jpg"
+          ]
+        }
+      ]
+    },
+    "ground_truth_2": {
+      "mask_count": 400,
+      "matched_mask_count": 400,
+      "missing_image_for_mask": [],
+      "samples": [
+        {
+          "mask": "Oil_0001.png",
+          "images": [
+            "oil\\Oil_0001.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0002.png",
+          "images": [
+            "oil\\Oil_0002.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0003.png",
+          "images": [
+            "oil\\Oil_0003.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0004.png",
+          "images": [
+            "oil\\Oil_0004.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0005.png",
+          "images": [
+            "oil\\Oil_0005.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0006.png",
+          "images": [
+            "oil\\Oil_0006.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0007.png",
+          "images": [
+            "oil\\Oil_0007.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0008.png",
+          "images": [
+            "oil\\Oil_0008.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0009.png",
+          "images": [
+            "oil\\Oil_0009.jpg"
+          ]
+        },
+        {
+          "mask": "Oil_0010.png",
+          "images": [
+            "oil\\Oil_0010.jpg"
+          ]
+        }
+      ]
+    }
+  },
+  "inferred_mask_class_mapping": {
+    "ground_truth_1": {
+      "Scr": "scratch",
+      "Sta": "stain"
+    },
+    "ground_truth_2": {
+      "Oil": "oil"
+    }
+  },
+  "mask_encoding": {
+    "ground_truth_1": {
+      "type": "indexed/grayscale mask",
+      "unique_pixel_values": {
+        "0": 800,
+        "2": 420,
+        "3": 400
+      },
+      "rgb_value_map": {},
+      "sample_details": [
+        {
+          "filename": "Scr_0001.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            3
+          ]
+        },
+        {
+          "filename": "Scr_0002.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            3
+          ]
+        },
+        {
+          "filename": "Scr_0003.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            3
+          ]
+        },
+        {
+          "filename": "Scr_0004.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            3
+          ]
+        },
+        {
+          "filename": "Scr_0005.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    "ground_truth_2": {
+      "type": "indexed/grayscale mask",
+      "unique_pixel_values": {
+        "0": 400,
+        "1": 400,
+        "2": 2
+      },
+      "rgb_value_map": {},
+      "sample_details": [
+        {
+          "filename": "Oil_0001.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "filename": "Oil_0002.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "filename": "Oil_0003.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "filename": "Oil_0004.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "filename": "Oil_0005.png",
+          "mode": "P",
+          "unique_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "multiple_defect_masks_per_image": {
+    "supported_by_mapping": true,
+    "observed_images_with_multiple_masks": []
+  },
+  "counts": {
+    "all_supported_files": 2420,
+    "image_files": 1220,
+    "mask_files": 1200
+  },
+  "missing_pairs": [],
+  "corrupt_files": [],
+  "duplicate_images": {
+    "exact_groups": [
+      [
+        "good\\0002.png",
+        "oil\\Oil_0228.jpg"
+      ],
+      [
+        "good\\0004.png",
+        "oil\\Oil_0182.jpg",
+        "oil\\Oil_0375.jpg",
+        "stain\\Sta_0276.jpg",
+        "stain\\Sta_0327.jpg"
+      ],
+      [
+        "good\\0005.png",
+        "good\\0009.png",
+        "good\\0010.png",
+        "good\\0012.png",
+        "good\\0016.png",
+        "good\\0017.png",
+        "oil\\Oil_0086.jpg",
+        "oil\\Oil_0098.jpg",
+        "oil\\Oil_0183.jpg",
+        "oil\\Oil_0184.jpg",
+        "oil\\Oil_0186.jpg",
+        "oil\\Oil_0189.jpg",
+        "oil\\Oil_0191.jpg",
+        "oil\\Oil_0192.jpg",
+        "oil\\Oil_0193.jpg",
+        "oil\\Oil_0196.jpg",
+        "oil\\Oil_0197.jpg",
+        "oil\\Oil_0198.jpg",
+        "oil\\Oil_0199.jpg",
+        "oil\\Oil_0200.jpg",
+        "oil\\Oil_0213.jpg",
+        "oil\\Oil_0214.jpg",
+        "oil\\Oil_0219.jpg",
+        "oil\\Oil_0226.jpg",
+        "oil\\Oil_0230.jpg",
+        "oil\\Oil_0237.jpg",
+        "oil\\Oil_0239.jpg",
+        "oil\\Oil_0241.jpg",
+        "oil\\Oil_0254.jpg",
+        "oil\\Oil_0281.jpg",
+        "oil\\Oil_0282.jpg",
+        "oil\\Oil_0284.jpg",
+        "oil\\Oil_0297.jpg",
+        "oil\\Oil_0300.jpg",
+        "oil\\Oil_0303.jpg",
+        "scratch\\Scr_0070.jpg",
+        "scratch\\Scr_0076.jpg",
+        "scratch\\Scr_0186.jpg",
+        "scratch\\Scr_0187.jpg",
+        "scratch\\Scr_0188.jpg",
+        "scratch\\Scr_0189.jpg",
+        "scratch\\Scr_0191.jpg",
+        "scratch\\Scr_0192.jpg",
+        "scratch\\Scr_0193.jpg",
+        "scratch\\Scr_0194.jpg",
+        "scratch\\Scr_0195.jpg",
+        "scratch\\Scr_0197.jpg",
+        "scratch\\Scr_0198.jpg",
+        "scratch\\Scr_0199.jpg",
+        "scratch\\Scr_0200.jpg",
+        "scratch\\Scr_0204.jpg",
+        "scratch\\Scr_0208.jpg",
+        "scratch\\Scr_0209.jpg",
+        "scratch\\Scr_0210.jpg",
+        "scratch\\Scr_0211.jpg",
+        "scratch\\Scr_0213.jpg",
+        "scratch\\Scr_0214.jpg",
+        "scratch\\Scr_0215.jpg",
+        "scratch\\Scr_0217.jpg",
+        "scratch\\Scr_0218.jpg",
+        "scratch\\Scr_0219.jpg",
+        "scratch\\Scr_0220.jpg",
+        "scratch\\Scr_0222.jpg",
+        "scratch\\Scr_0224.jpg",
+        "scratch\\Scr_0225.jpg",
+        "scratch\\Scr_0235.jpg",
+        "scratch\\Scr_0246.jpg",
+        "scratch\\Scr_0257.jpg",
+        "scratch\\Scr_0267.jpg",
+        "scratch\\Scr_0279.jpg",
+        "scratch\\Scr_0290.jpg",
+        "scratch\\Scr_0301.jpg",
+        "scratch\\Scr_0338.jpg",
+        "scratch\\Scr_0342.jpg",
+        "scratch\\Scr_0345.jpg",
+        "scratch\\Scr_0348.jpg",
+        "scratch\\Scr_0349.jpg",
+        "scratch\\Scr_0351.jpg",
+        "scratch\\Scr_0352.jpg",
+        "scratch\\Scr_0373.jpg",
+        "scratch\\Scr_0374.jpg",
+        "scratch\\Scr_0375.jpg",
+        "scratch\\Scr_0376.jpg"
+      ],
+      [
+        "good\\0006.png",
+        "good\\0007.png",
+        "good\\0008.png",
+        "good\\0014.png",
+        "good\\0018.png",
+        "good\\0020.png",
+        "oil\\Oil_0014.jpg",
+        "oil\\Oil_0020.jpg",
+        "oil\\Oil_0033.jpg",
+        "oil\\Oil_0034.jpg",
+        "oil\\Oil_0041.jpg",
+        "oil\\Oil_0042.jpg",
+        "oil\\Oil_0043.jpg",
+        "oil\\Oil_0055.jpg",
+        "oil\\Oil_0063.jpg",
+        "oil\\Oil_0064.jpg",
+        "oil\\Oil_0067.jpg",
+        "oil\\Oil_0072.jpg",
+        "oil\\Oil_0073.jpg",
+        "oil\\Oil_0077.jpg",
+        "oil\\Oil_0145.jpg",
+        "oil\\Oil_0249.jpg",
+        "oil\\Oil_0250.jpg",
+        "oil\\Oil_0251.jpg",
+        "oil\\Oil_0252.jpg",
+        "oil\\Oil_0253.jpg",
+        "oil\\Oil_0366.jpg",
+        "oil\\Oil_0370.jpg",
+        "oil\\Oil_0381.jpg",
+        "oil\\Oil_0388.jpg",
+        "scratch\\Scr_0002.jpg",
+        "scratch\\Scr_0013.jpg",
+        "scratch\\Scr_0026.jpg",
+        "scratch\\Scr_0027.jpg",
+        "scratch\\Scr_0029.jpg",
+        "scratch\\Scr_0030.jpg",
+        "scratch\\Scr_0031.jpg",
+        "scratch\\Scr_0032.jpg",
+        "scratch\\Scr_0033.jpg",
+        "scratch\\Scr_0034.jpg",
+        "scratch\\Scr_0035.jpg",
+        "scratch\\Scr_0036.jpg",
+        "scratch\\Scr_0037.jpg",
+        "scratch\\Scr_0038.jpg",
+        "scratch\\Scr_0040.jpg",
+        "scratch\\Scr_0041.jpg",
+        "scratch\\Scr_0044.jpg",
+        "scratch\\Scr_0045.jpg",
+        "scratch\\Scr_0047.jpg",
+        "scratch\\Scr_0054.jpg",
+        "scratch\\Scr_0055.jpg",
+        "scratch\\Scr_0056.jpg",
+        "scratch\\Scr_0057.jpg",
+        "scratch\\Scr_0058.jpg",
+        "scratch\\Scr_0059.jpg",
+        "scratch\\Scr_0060.jpg",
+        "scratch\\Scr_0061.jpg",
+        "scratch\\Scr_0062.jpg",
+        "scratch\\Scr_0063.jpg",
+        "scratch\\Scr_0064.jpg",
+        "scratch\\Scr_0065.jpg",
+        "scratch\\Scr_0066.jpg",
+        "scratch\\Scr_0067.jpg",
+        "scratch\\Scr_0068.jpg",
+        "scratch\\Scr_0077.jpg",
+        "scratch\\Scr_0078.jpg",
+        "scratch\\Scr_0079.jpg",
+        "scratch\\Scr_0080.jpg",
+        "scratch\\Scr_0081.jpg",
+        "scratch\\Scr_0082.jpg",
+        "scratch\\Scr_0083.jpg",
+        "scratch\\Scr_0084.jpg",
+        "scratch\\Scr_0085.jpg",
+        "scratch\\Scr_0086.jpg",
+        "scratch\\Scr_0087.jpg",
+        "scratch\\Scr_0088.jpg",
+        "scratch\\Scr_0089.jpg",
+        "scratch\\Scr_0090.jpg",
+        "scratch\\Scr_0091.jpg",
+        "scratch\\Scr_0092.jpg",
+        "scratch\\Scr_0093.jpg",
+        "scratch\\Scr_0094.jpg",
+        "scratch\\Scr_0095.jpg",
+        "scratch\\Scr_0096.jpg",
+        "scratch\\Scr_0097.jpg",
+        "scratch\\Scr_0098.jpg",
+        "scratch\\Scr_0099.jpg",
+        "scratch\\Scr_0100.jpg",
+        "scratch\\Scr_0102.jpg",
+        "scratch\\Scr_0104.jpg",
+        "scratch\\Scr_0105.jpg",
+        "scratch\\Scr_0107.jpg",
+        "scratch\\Scr_0108.jpg",
+        "scratch\\Scr_0109.jpg",
+        "scratch\\Scr_0110.jpg",
+        "scratch\\Scr_0111.jpg",
+        "scratch\\Scr_0112.jpg",
+        "scratch\\Scr_0114.jpg",
+        "scratch\\Scr_0115.jpg",
+        "scratch\\Scr_0117.jpg",
+        "scratch\\Scr_0118.jpg",
+        "scratch\\Scr_0119.jpg",
+        "scratch\\Scr_0120.jpg",
+        "scratch\\Scr_0121.jpg",
+        "scratch\\Scr_0122.jpg",
+        "scratch\\Scr_0123.jpg",
+        "scratch\\Scr_0125.jpg",
+        "scratch\\Scr_0126.jpg",
+        "scratch\\Scr_0129.jpg",
+        "scratch\\Scr_0131.jpg",
+        "scratch\\Scr_0132.jpg",
+        "scratch\\Scr_0133.jpg",
+        "scratch\\Scr_0134.jpg",
+        "scratch\\Scr_0136.jpg",
+        "scratch\\Scr_0138.jpg",
+        "scratch\\Scr_0139.jpg",
+        "scratch\\Scr_0140.jpg",
+        "scratch\\Scr_0141.jpg",
+        "scratch\\Scr_0142.jpg",
+        "scratch\\Scr_0143.jpg",
+        "scratch\\Scr_0145.jpg",
+        "scratch\\Scr_0147.jpg",
+        "scratch\\Scr_0148.jpg",
+        "scratch\\Scr_0150.jpg",
+        "scratch\\Scr_0151.jpg",
+        "scratch\\Scr_0152.jpg",
+        "scratch\\Scr_0153.jpg",
+        "scratch\\Scr_0155.jpg",
+        "scratch\\Scr_0156.jpg",
+        "scratch\\Scr_0158.jpg",
+        "scratch\\Scr_0160.jpg",
+        "scratch\\Scr_0161.jpg",
+        "scratch\\Scr_0162.jpg",
+        "scratch\\Scr_0163.jpg",
+        "scratch\\Scr_0165.jpg",
+        "scratch\\Scr_0166.jpg",
+        "scratch\\Scr_0167.jpg",
+        "scratch\\Scr_0223.jpg",
+        "scratch\\Scr_0226.jpg",
+        "scratch\\Scr_0228.jpg",
+        "scratch\\Scr_0229.jpg",
+        "scratch\\Scr_0230.jpg",
+        "scratch\\Scr_0231.jpg",
+        "scratch\\Scr_0232.jpg",
+        "scratch\\Scr_0233.jpg",
+        "scratch\\Scr_0234.jpg",
+        "scratch\\Scr_0236.jpg",
+        "scratch\\Scr_0237.jpg",
+        "scratch\\Scr_0238.jpg",
+        "scratch\\Scr_0243.jpg",
+        "scratch\\Scr_0244.jpg",
+        "scratch\\Scr_0245.jpg",
+        "scratch\\Scr_0247.jpg",
+        "scratch\\Scr_0248.jpg",
+        "scratch\\Scr_0249.jpg",
+        "scratch\\Scr_0251.jpg",
+        "scratch\\Scr_0252.jpg",
+        "scratch\\Scr_0253.jpg",
+        "scratch\\Scr_0254.jpg",
+        "scratch\\Scr_0255.jpg",
+        "scratch\\Scr_0256.jpg",
+        "scratch\\Scr_0258.jpg",
+        "scratch\\Scr_0259.jpg",
+        "scratch\\Scr_0263.jpg",
+        "scratch\\Scr_0264.jpg",
+        "scratch\\Scr_0265.jpg",
+        "scratch\\Scr_0266.jpg",
+        "scratch\\Scr_0285.jpg",
+        "scratch\\Scr_0286.jpg",
+        "scratch\\Scr_0287.jpg",
+        "scratch\\Scr_0288.jpg",
+        "scratch\\Scr_0292.jpg",
+        "scratch\\Scr_0295.jpg",
+        "scratch\\Scr_0296.jpg",
+        "scratch\\Scr_0297.jpg",
+        "scratch\\Scr_0304.jpg",
+        "scratch\\Scr_0305.jpg",
+        "scratch\\Scr_0315.jpg",
+        "scratch\\Scr_0319.jpg",
+        "scratch\\Scr_0322.jpg",
+        "scratch\\Scr_0324.jpg",
+        "scratch\\Scr_0325.jpg",
+        "scratch\\Scr_0329.jpg",
+        "scratch\\Scr_0332.jpg",
+        "scratch\\Scr_0333.jpg",
+        "scratch\\Scr_0334.jpg",
+        "scratch\\Scr_0336.jpg",
+        "scratch\\Scr_0346.jpg",
+        "scratch\\Scr_0368.jpg",
+        "scratch\\Scr_0390.jpg",
+        "stain\\Sta_0083.jpg",
+        "stain\\Sta_0084.jpg",
+        "stain\\Sta_0085.jpg",
+        "stain\\Sta_0086.jpg",
+        "stain\\Sta_0087.jpg",
+        "stain\\Sta_0088.jpg",
+        "stain\\Sta_0089.jpg",
+        "stain\\Sta_0091.jpg",
+        "stain\\Sta_0092.jpg",
+        "stain\\Sta_0093.jpg",
+        "stain\\Sta_0094.jpg",
+        "stain\\Sta_0095.jpg",
+        "stain\\Sta_0110.jpg",
+        "stain\\Sta_0111.jpg",
+        "stain\\Sta_0112.jpg",
+        "stain\\Sta_0113.jpg",
+        "stain\\Sta_0137.jpg",
+        "stain\\Sta_0139.jpg",
+        "stain\\Sta_0141.jpg",
+        "stain\\Sta_0142.jpg",
+        "stain\\Sta_0143.jpg",
+        "stain\\Sta_0144.jpg",
+        "stain\\Sta_0145.jpg",
+        "stain\\Sta_0157.jpg",
+        "stain\\Sta_0158.jpg",
+        "stain\\Sta_0159.jpg",
+        "stain\\Sta_0160.jpg",
+        "stain\\Sta_0161.jpg",
+        "stain\\Sta_0265.jpg",
+        "stain\\Sta_0266.jpg",
+        "stain\\Sta_0267.jpg",
+        "stain\\Sta_0268.jpg",
+        "stain\\Sta_0269.jpg",
+        "stain\\Sta_0272.jpg",
+        "stain\\Sta_0273.jpg",
+        "stain\\Sta_0274.jpg",
+        "stain\\Sta_0275.jpg",
+        "stain\\Sta_0282.jpg",
+        "stain\\Sta_0283.jpg",
+        "stain\\Sta_0284.jpg",
+        "stain\\Sta_0285.jpg",
+        "stain\\Sta_0288.jpg",
+        "stain\\Sta_0322.jpg",
+        "stain\\Sta_0323.jpg",
+        "stain\\Sta_0324.jpg",
+        "stain\\Sta_0325.jpg",
+        "stain\\Sta_0326.jpg",
+        "stain\\Sta_0339.jpg",
+        "stain\\Sta_0340.jpg",
+        "stain\\Sta_0341.jpg",
+        "stain\\Sta_0342.jpg",
+        "stain\\Sta_0343.jpg",
+        "stain\\Sta_0361.jpg",
+        "stain\\Sta_0363.jpg"
+      ],
+      [
+        "good\\0013.png",
+        "stain\\Sta_0250.jpg"
+      ],
+      [
+        "good\\0019.png",
+        "oil\\Oil_0007.jpg",
+        "oil\\Oil_0163.jpg",
+        "oil\\Oil_0179.jpg",
+        "oil\\Oil_0211.jpg",
+        "oil\\Oil_0231.jpg",
+        "oil\\Oil_0233.jpg",
+        "oil\\Oil_0275.jpg",
+        "oil\\Oil_0335.jpg",
+        "oil\\Oil_0358.jpg",
+        "oil\\Oil_0373.jpg",
+        "scratch\\Scr_0072.jpg",
+        "stain\\Sta_0132.jpg",
+        "stain\\Sta_0133.jpg",
+        "stain\\Sta_0294.jpg",
+        "stain\\Sta_0295.jpg",
+        "stain\\Sta_0311.jpg",
+        "stain\\Sta_0312.jpg",
+        "stain\\Sta_0313.jpg",
+        "stain\\Sta_0314.jpg",
+        "stain\\Sta_0315.jpg",
+        "stain\\Sta_0364.jpg",
+        "stain\\Sta_0378.jpg",
+        "stain\\Sta_0379.jpg"
+      ],
+      [
+        "oil\\Oil_0002.jpg",
+        "stain\\Sta_0008.jpg"
+      ],
+      [
+        "oil\\Oil_0005.jpg",
+        "stain\\Sta_0105.jpg",
+        "stain\\Sta_0109.jpg",
+        "stain\\Sta_0278.jpg",
+        "stain\\Sta_0279.jpg"
+      ],
+      [
+        "oil\\Oil_0010.jpg",
+        "oil\\Oil_0012.jpg",
+        "oil\\Oil_0018.jpg",
+        "oil\\Oil_0019.jpg",
+        "oil\\Oil_0022.jpg",
+        "oil\\Oil_0023.jpg",
+        "oil\\Oil_0025.jpg",
+        "oil\\Oil_0026.jpg",
+        "oil\\Oil_0027.jpg",
+        "oil\\Oil_0028.jpg",
+        "oil\\Oil_0040.jpg",
+        "oil\\Oil_0047.jpg",
+        "oil\\Oil_0051.jpg",
+        "oil\\Oil_0052.jpg",
+        "oil\\Oil_0053.jpg"
+      ],
+      [
+        "oil\\Oil_0013.jpg",
+        "oil\\Oil_0082.jpg",
+        "oil\\Oil_0087.jpg",
+        "oil\\Oil_0090.jpg",
+        "oil\\Oil_0093.jpg",
+        "oil\\Oil_0124.jpg",
+        "oil\\Oil_0240.jpg",
+        "oil\\Oil_0283.jpg",
+        "oil\\Oil_0294.jpg",
+        "oil\\Oil_0302.jpg",
+        "oil\\Oil_0304.jpg",
+        "oil\\Oil_0307.jpg",
+        "oil\\Oil_0334.jpg",
+        "oil\\Oil_0346.jpg",
+        "oil\\Oil_0348.jpg",
+        "oil\\Oil_0357.jpg",
+        "oil\\Oil_0390.jpg",
+        "scratch\\Scr_0074.jpg",
+        "scratch\\Scr_0201.jpg",
+        "scratch\\Scr_0203.jpg",
+        "scratch\\Scr_0393.jpg",
+        "stain\\Sta_0214.jpg"
+      ],
+      [
+        "oil\\Oil_0015.jpg",
+        "oil\\Oil_0016.jpg",
+        "oil\\Oil_0021.jpg",
+        "oil\\Oil_0036.jpg",
+        "oil\\Oil_0038.jpg",
+        "oil\\Oil_0039.jpg",
+        "oil\\Oil_0045.jpg",
+        "oil\\Oil_0054.jpg",
+        "oil\\Oil_0056.jpg",
+        "oil\\Oil_0059.jpg",
+        "oil\\Oil_0060.jpg",
+        "oil\\Oil_0061.jpg",
+        "scratch\\Scr_0024.jpg",
+        "scratch\\Scr_0289.jpg",
+        "scratch\\Scr_0291.jpg",
+        "scratch\\Scr_0357.jpg",
+        "scratch\\Scr_0379.jpg",
+        "stain\\Sta_0154.jpg",
+        "stain\\Sta_0155.jpg",
+        "stain\\Sta_0156.jpg",
+        "stain\\Sta_0162.jpg",
+        "stain\\Sta_0163.jpg",
+        "stain\\Sta_0164.jpg",
+        "stain\\Sta_0165.jpg",
+        "stain\\Sta_0166.jpg",
+        "stain\\Sta_0167.jpg",
+        "stain\\Sta_0168.jpg",
+        "stain\\Sta_0169.jpg",
+        "stain\\Sta_0170.jpg",
+        "stain\\Sta_0171.jpg",
+        "stain\\Sta_0172.jpg",
+        "stain\\Sta_0173.jpg",
+        "stain\\Sta_0178.jpg",
+        "stain\\Sta_0179.jpg",
+        "stain\\Sta_0180.jpg",
+        "stain\\Sta_0181.jpg",
+        "stain\\Sta_0194.jpg",
+        "stain\\Sta_0195.jpg",
+        "stain\\Sta_0196.jpg",
+        "stain\\Sta_0197.jpg",
+        "stain\\Sta_0201.jpg",
+        "stain\\Sta_0202.jpg",
+        "stain\\Sta_0204.jpg",
+        "stain\\Sta_0205.jpg"
+      ],
+      [
+        "oil\\Oil_0024.jpg",
+        "oil\\Oil_0368.jpg",
+        "stain\\Sta_0229.jpg"
+      ],
+      [
+        "oil\\Oil_0029.jpg",
+        "oil\\Oil_0069.jpg",
+        "oil\\Oil_0119.jpg",
+        "stain\\Sta_0184.jpg",
+        "stain\\Sta_0185.jpg",
+        "stain\\Sta_0186.jpg",
+        "stain\\Sta_0187.jpg",
+        "stain\\Sta_0188.jpg",
+        "stain\\Sta_0189.jpg",
+        "stain\\Sta_0198.jpg",
+        "stain\\Sta_0199.jpg"
+      ],
+      [
+        "oil\\Oil_0031.jpg",
+        "oil\\Oil_0032.jpg"
+      ],
+      [
+        "oil\\Oil_0035.jpg",
+        "oil\\Oil_0190.jpg",
+        "oil\\Oil_0225.jpg",
+        "oil\\Oil_0248.jpg",
+        "oil\\Oil_0257.jpg",
+        "oil\\Oil_0339.jpg",
+        "scratch\\Scr_0385.jpg",
+        "stain\\Sta_0233.jpg",
+        "stain\\Sta_0235.jpg",
+        "stain\\Sta_0236.jpg",
+        "stain\\Sta_0237.jpg",
+        "stain\\Sta_0243.jpg",
+        "stain\\Sta_0244.jpg",
+        "stain\\Sta_0245.jpg",
+        "stain\\Sta_0246.jpg"
+      ],
+      [
+        "oil\\Oil_0037.jpg",
+        "oil\\Oil_0044.jpg",
+        "scratch\\Scr_0039.jpg"
+      ],
+      [
+        "oil\\Oil_0049.jpg",
+        "oil\\Oil_0050.jpg"
+      ],
+      [
+        "oil\\Oil_0057.jpg",
+        "oil\\Oil_0268.jpg"
+      ],
+      [
+        "oil\\Oil_0065.jpg",
+        "stain\\Sta_0182.jpg",
+        "stain\\Sta_0183.jpg"
+      ],
+      [
+        "oil\\Oil_0068.jpg",
+        "oil\\Oil_0350.jpg"
+      ],
+      [
+        "oil\\Oil_0076.jpg",
+        "oil\\Oil_0171.jpg",
+        "oil\\Oil_0172.jpg",
+        "oil\\Oil_0277.jpg",
+        "stain\\Sta_0059.jpg",
+        "stain\\Sta_0073.jpg",
+        "stain\\Sta_0357.jpg",
+        "stain\\Sta_0358.jpg",
+        "stain\\Sta_0395.jpg",
+        "stain\\Sta_0396.jpg",
+        "stain\\Sta_0397.jpg",
+        "stain\\Sta_0398.jpg",
+        "stain\\Sta_0399.jpg",
+        "stain\\Sta_0400.jpg"
+      ],
+      [
+        "oil\\Oil_0078.jpg",
+        "oil\\Oil_0203.jpg",
+        "oil\\Oil_0234.jpg"
+      ],
+      [
+        "oil\\Oil_0079.jpg",
+        "oil\\Oil_0344.jpg",
+        "scratch\\Scr_0171.jpg",
+        "scratch\\Scr_0172.jpg",
+        "scratch\\Scr_0173.jpg",
+        "scratch\\Scr_0174.jpg",
+        "scratch\\Scr_0175.jpg",
+        "scratch\\Scr_0182.jpg",
+        "scratch\\Scr_0183.jpg",
+        "stain\\Sta_0004.jpg",
+        "stain\\Sta_0215.jpg",
+        "stain\\Sta_0216.jpg",
+        "stain\\Sta_0217.jpg",
+        "stain\\Sta_0218.jpg",
+        "stain\\Sta_0219.jpg",
+        "stain\\Sta_0220.jpg",
+        "stain\\Sta_0221.jpg",
+        "stain\\Sta_0222.jpg"
+      ],
+      [
+        "oil\\Oil_0080.jpg",
+        "oil\\Oil_0204.jpg"
+      ],
+      [
+        "oil\\Oil_0081.jpg",
+        "scratch\\Scr_0069.jpg",
+        "scratch\\Scr_0071.jpg",
+        "scratch\\Scr_0169.jpg"
+      ],
+      [
+        "oil\\Oil_0083.jpg",
+        "oil\\Oil_0299.jpg",
+        "scratch\\Scr_0170.jpg",
+        "scratch\\Scr_0196.jpg",
+        "scratch\\Scr_0202.jpg",
+        "scratch\\Scr_0205.jpg",
+        "scratch\\Scr_0207.jpg",
+        "scratch\\Scr_0268.jpg",
+        "scratch\\Scr_0312.jpg",
+        "scratch\\Scr_0337.jpg",
+        "scratch\\Scr_0343.jpg",
+        "scratch\\Scr_0362.jpg",
+        "scratch\\Scr_0363.jpg",
+        "stain\\Sta_0208.jpg",
+        "stain\\Sta_0209.jpg",
+        "stain\\Sta_0224.jpg",
+        "stain\\Sta_0227.jpg"
+      ],
+      [
+        "oil\\Oil_0084.jpg",
+        "oil\\Oil_0216.jpg",
+        "oil\\Oil_0218.jpg",
+        "oil\\Oil_0232.jpg",
+        "scratch\\Scr_0356.jpg"
+      ],
+      [
+        "oil\\Oil_0085.jpg",
+        "oil\\Oil_0246.jpg"
+      ],
+      [
+        "oil\\Oil_0088.jpg",
+        "oil\\Oil_0236.jpg",
+        "scratch\\Scr_0386.jpg",
+        "scratch\\Scr_0387.jpg"
+      ],
+      [
+        "oil\\Oil_0089.jpg",
+        "oil\\Oil_0092.jpg",
+        "oil\\Oil_0100.jpg",
+        "stain\\Sta_0223.jpg"
+      ],
+      [
+        "oil\\Oil_0091.jpg",
+        "oil\\Oil_0103.jpg",
+        "oil\\Oil_0202.jpg",
+        "oil\\Oil_0245.jpg",
+        "scratch\\Scr_0216.jpg"
+      ],
+      [
+        "oil\\Oil_0104.jpg",
+        "scratch\\Scr_0275.jpg",
+        "scratch\\Scr_0276.jpg",
+        "scratch\\Scr_0392.jpg",
+        "scratch\\Scr_0395.jpg",
+        "scratch\\Scr_0397.jpg"
+      ],
+      [
+        "oil\\Oil_0105.jpg",
+        "oil\\Oil_0118.jpg"
+      ],
+      [
+        "oil\\Oil_0106.jpg",
+        "oil\\Oil_0108.jpg"
+      ],
+      [
+        "oil\\Oil_0107.jpg",
+        "oil\\Oil_0332.jpg"
+      ],
+      [
+        "oil\\Oil_0110.jpg",
+        "oil\\Oil_0318.jpg"
+      ],
+      [
+        "oil\\Oil_0114.jpg",
+        "oil\\Oil_0327.jpg",
+        "oil\\Oil_0328.jpg",
+        "oil\\Oil_0329.jpg"
+      ],
+      [
+        "oil\\Oil_0116.jpg",
+        "oil\\Oil_0117.jpg",
+        "scratch\\Scr_0294.jpg"
+      ],
+      [
+        "oil\\Oil_0121.jpg",
+        "oil\\Oil_0136.jpg"
+      ],
+      [
+        "oil\\Oil_0123.jpg",
+        "oil\\Oil_0126.jpg",
+        "oil\\Oil_0138.jpg"
+      ],
+      [
+        "oil\\Oil_0130.jpg",
+        "oil\\Oil_0150.jpg"
+      ],
+      [
+        "oil\\Oil_0134.jpg",
+        "oil\\Oil_0141.jpg"
+      ],
+      [
+        "oil\\Oil_0146.jpg",
+        "scratch\\Scr_0398.jpg"
+      ],
+      [
+        "oil\\Oil_0157.jpg",
+        "oil\\Oil_0180.jpg",
+        "oil\\Oil_0274.jpg",
+        "oil\\Oil_0354.jpg",
+        "oil\\Oil_0395.jpg",
+        "scratch\\Scr_0124.jpg",
+        "scratch\\Scr_0277.jpg",
+        "scratch\\Scr_0278.jpg",
+        "scratch\\Scr_0300.jpg",
+        "scratch\\Scr_0366.jpg",
+        "scratch\\Scr_0388.jpg",
+        "scratch\\Scr_0389.jpg"
+      ],
+      [
+        "oil\\Oil_0166.jpg",
+        "oil\\Oil_0167.jpg"
+      ],
+      [
+        "oil\\Oil_0169.jpg",
+        "oil\\Oil_0379.jpg",
+        "stain\\Sta_0002.jpg",
+        "stain\\Sta_0003.jpg"
+      ],
+      [
+        "oil\\Oil_0174.jpg",
+        "stain\\Sta_0024.jpg"
+      ],
+      [
+        "oil\\Oil_0175.jpg",
+        "oil\\Oil_0176.jpg"
+      ],
+      [
+        "oil\\Oil_0178.jpg",
+        "stain\\Sta_0001.jpg"
+      ],
+      [
+        "oil\\Oil_0221.jpg",
+        "stain\\Sta_0228.jpg",
+        "stain\\Sta_0234.jpg"
+      ],
+      [
+        "oil\\Oil_0222.jpg",
+        "scratch\\Scr_0281.jpg"
+      ],
+      [
+        "oil\\Oil_0235.jpg",
+        "scratch\\Scr_0335.jpg",
+        "scratch\\Scr_0339.jpg",
+        "scratch\\Scr_0340.jpg",
+        "scratch\\Scr_0341.jpg"
+      ],
+      [
+        "oil\\Oil_0247.jpg",
+        "scratch\\Scr_0323.jpg"
+      ],
+      [
+        "oil\\Oil_0259.jpg",
+        "oil\\Oil_0261.jpg",
+        "oil\\Oil_0273.jpg"
+      ],
+      [
+        "oil\\Oil_0278.jpg",
+        "oil\\Oil_0378.jpg",
+        "oil\\Oil_0380.jpg",
+        "stain\\Sta_0277.jpg",
+        "stain\\Sta_0287.jpg",
+        "stain\\Sta_0290.jpg",
+        "stain\\Sta_0296.jpg",
+        "stain\\Sta_0300.jpg",
+        "stain\\Sta_0301.jpg",
+        "stain\\Sta_0302.jpg",
+        "stain\\Sta_0303.jpg",
+        "stain\\Sta_0304.jpg",
+        "stain\\Sta_0305.jpg",
+        "stain\\Sta_0309.jpg",
+        "stain\\Sta_0310.jpg"
+      ],
+      [
+        "oil\\Oil_0279.jpg",
+        "oil\\Oil_0301.jpg",
+        "scratch\\Scr_0399.jpg"
+      ],
+      [
+        "oil\\Oil_0285.jpg",
+        "oil\\Oil_0288.jpg",
+        "oil\\Oil_0289.jpg",
+        "oil\\Oil_0293.jpg"
+      ],
+      [
+        "oil\\Oil_0286.jpg",
+        "oil\\Oil_0287.jpg"
+      ],
+      [
+        "oil\\Oil_0290.jpg",
+        "scratch\\Scr_0181.jpg",
+        "scratch\\Scr_0382.jpg",
+        "scratch\\Scr_0383.jpg",
+        "scratch\\Scr_0384.jpg"
+      ],
+      [
+        "oil\\Oil_0291.jpg",
+        "oil\\Oil_0292.jpg",
+        "oil\\Oil_0306.jpg"
+      ],
+      [
+        "oil\\Oil_0296.jpg",
+        "stain\\Sta_0212.jpg",
+        "stain\\Sta_0213.jpg",
+        "stain\\Sta_0248.jpg",
+        "stain\\Sta_0253.jpg",
+        "stain\\Sta_0254.jpg",
+        "stain\\Sta_0255.jpg",
+        "stain\\Sta_0256.jpg"
+      ],
+      [
+        "oil\\Oil_0309.jpg",
+        "oil\\Oil_0333.jpg"
+      ],
+      [
+        "oil\\Oil_0311.jpg",
+        "oil\\Oil_0317.jpg"
+      ],
+      [
+        "oil\\Oil_0313.jpg",
+        "oil\\Oil_0324.jpg"
+      ],
+      [
+        "oil\\Oil_0315.jpg",
+        "oil\\Oil_0322.jpg"
+      ],
+      [
+        "oil\\Oil_0320.jpg",
+        "oil\\Oil_0321.jpg"
+      ],
+      [
+        "oil\\Oil_0338.jpg",
+        "oil\\Oil_0341.jpg",
+        "oil\\Oil_0342.jpg"
+      ],
+      [
+        "oil\\Oil_0340.jpg",
+        "oil\\Oil_0343.jpg",
+        "oil\\Oil_0347.jpg",
+        "scratch\\Scr_0212.jpg",
+        "scratch\\Scr_0364.jpg"
+      ],
+      [
+        "oil\\Oil_0345.jpg",
+        "stain\\Sta_0257.jpg",
+        "stain\\Sta_0258.jpg",
+        "stain\\Sta_0259.jpg",
+        "stain\\Sta_0260.jpg"
+      ],
+      [
+        "oil\\Oil_0349.jpg",
+        "scratch\\Scr_0178.jpg",
+        "scratch\\Scr_0179.jpg",
+        "scratch\\Scr_0180.jpg",
+        "scratch\\Scr_0355.jpg",
+        "scratch\\Scr_0360.jpg",
+        "scratch\\Scr_0361.jpg",
+        "scratch\\Scr_0381.jpg"
+      ],
+      [
+        "oil\\Oil_0359.jpg",
+        "oil\\Oil_0391.jpg",
+        "stain\\Sta_0384.jpg",
+        "stain\\Sta_0385.jpg"
+      ],
+      [
+        "oil\\Oil_0360.jpg",
+        "oil\\Oil_0387.jpg",
+        "stain\\Sta_0375.jpg",
+        "stain\\Sta_0376.jpg",
+        "stain\\Sta_0383.jpg",
+        "stain\\Sta_0393.jpg"
+      ],
+      [
+        "oil\\Oil_0364.jpg",
+        "oil\\Oil_0382.jpg",
+        "oil\\Oil_0383.jpg",
+        "oil\\Oil_0386.jpg",
+        "stain\\Sta_0032.jpg",
+        "stain\\Sta_0103.jpg",
+        "stain\\Sta_0104.jpg",
+        "stain\\Sta_0114.jpg",
+        "stain\\Sta_0116.jpg",
+        "stain\\Sta_0117.jpg",
+        "stain\\Sta_0119.jpg",
+        "stain\\Sta_0261.jpg",
+        "stain\\Sta_0262.jpg",
+        "stain\\Sta_0263.jpg",
+        "stain\\Sta_0264.jpg",
+        "stain\\Sta_0286.jpg",
+        "stain\\Sta_0328.jpg",
+        "stain\\Sta_0329.jpg",
+        "stain\\Sta_0330.jpg",
+        "stain\\Sta_0331.jpg",
+        "stain\\Sta_0332.jpg",
+        "stain\\Sta_0334.jpg",
+        "stain\\Sta_0335.jpg",
+        "stain\\Sta_0336.jpg",
+        "stain\\Sta_0337.jpg",
+        "stain\\Sta_0338.jpg",
+        "stain\\Sta_0349.jpg",
+        "stain\\Sta_0350.jpg",
+        "stain\\Sta_0351.jpg",
+        "stain\\Sta_0352.jpg",
+        "stain\\Sta_0353.jpg",
+        "stain\\Sta_0356.jpg"
+      ],
+      [
+        "oil\\Oil_0389.jpg",
+        "stain\\Sta_0052.jpg",
+        "stain\\Sta_0053.jpg",
+        "stain\\Sta_0065.jpg",
+        "stain\\Sta_0066.jpg",
+        "stain\\Sta_0126.jpg",
+        "stain\\Sta_0292.jpg",
+        "stain\\Sta_0365.jpg",
+        "stain\\Sta_0366.jpg",
+        "stain\\Sta_0367.jpg",
+        "stain\\Sta_0368.jpg",
+        "stain\\Sta_0369.jpg",
+        "stain\\Sta_0370.jpg",
+        "stain\\Sta_0371.jpg",
+        "stain\\Sta_0372.jpg",
+        "stain\\Sta_0373.jpg",
+        "stain\\Sta_0374.jpg",
+        "stain\\Sta_0377.jpg",
+        "stain\\Sta_0380.jpg",
+        "stain\\Sta_0381.jpg",
+        "stain\\Sta_0382.jpg",
+        "stain\\Sta_0389.jpg",
+        "stain\\Sta_0390.jpg",
+        "stain\\Sta_0391.jpg",
+        "stain\\Sta_0392.jpg",
+        "stain\\Sta_0394.jpg"
+      ],
+      [
+        "oil\\Oil_0392.jpg",
+        "stain\\Sta_0099.jpg",
+        "stain\\Sta_0100.jpg",
+        "stain\\Sta_0101.jpg",
+        "stain\\Sta_0102.jpg",
+        "stain\\Sta_0118.jpg",
+        "stain\\Sta_0121.jpg",
+        "stain\\Sta_0122.jpg",
+        "stain\\Sta_0354.jpg",
+        "stain\\Sta_0355.jpg",
+        "stain\\Sta_0388.jpg"
+      ],
+      [
+        "oil\\Oil_0393.jpg",
+        "stain\\Sta_0115.jpg",
+        "stain\\Sta_0344.jpg",
+        "stain\\Sta_0345.jpg",
+        "stain\\Sta_0346.jpg",
+        "stain\\Sta_0347.jpg",
+        "stain\\Sta_0348.jpg"
+      ],
+      [
+        "scratch\\Scr_0003.jpg",
+        "scratch\\Scr_0400.jpg"
+      ],
+      [
+        "scratch\\Scr_0004.jpg",
+        "scratch\\Scr_0006.jpg",
+        "scratch\\Scr_0020.jpg"
+      ],
+      [
+        "scratch\\Scr_0005.jpg",
+        "scratch\\Scr_0007.jpg",
+        "scratch\\Scr_0009.jpg",
+        "scratch\\Scr_0023.jpg"
+      ],
+      [
+        "scratch\\Scr_0011.jpg",
+        "scratch\\Scr_0012.jpg",
+        "scratch\\Scr_0016.jpg",
+        "scratch\\Scr_0017.jpg",
+        "scratch\\Scr_0018.jpg"
+      ],
+      [
+        "scratch\\Scr_0015.jpg",
+        "scratch\\Scr_0022.jpg",
+        "scratch\\Scr_0025.jpg"
+      ],
+      [
+        "scratch\\Scr_0028.jpg",
+        "scratch\\Scr_0293.jpg",
+        "scratch\\Scr_0306.jpg",
+        "scratch\\Scr_0308.jpg",
+        "scratch\\Scr_0313.jpg",
+        "scratch\\Scr_0314.jpg",
+        "scratch\\Scr_0318.jpg",
+        "scratch\\Scr_0326.jpg",
+        "scratch\\Scr_0327.jpg"
+      ],
+      [
+        "scratch\\Scr_0042.jpg",
+        "scratch\\Scr_0043.jpg",
+        "scratch\\Scr_0116.jpg",
+        "scratch\\Scr_0127.jpg",
+        "scratch\\Scr_0128.jpg",
+        "scratch\\Scr_0130.jpg",
+        "scratch\\Scr_0137.jpg",
+        "scratch\\Scr_0302.jpg"
+      ],
+      [
+        "scratch\\Scr_0046.jpg",
+        "scratch\\Scr_0260.jpg",
+        "scratch\\Scr_0262.jpg"
+      ],
+      [
+        "scratch\\Scr_0048.jpg",
+        "scratch\\Scr_0049.jpg",
+        "scratch\\Scr_0050.jpg",
+        "scratch\\Scr_0053.jpg"
+      ],
+      [
+        "scratch\\Scr_0075.jpg",
+        "scratch\\Scr_0159.jpg"
+      ],
+      [
+        "scratch\\Scr_0101.jpg",
+        "scratch\\Scr_0113.jpg"
+      ],
+      [
+        "scratch\\Scr_0103.jpg",
+        "scratch\\Scr_0303.jpg"
+      ],
+      [
+        "scratch\\Scr_0241.jpg",
+        "scratch\\Scr_0242.jpg"
+      ],
+      [
+        "scratch\\Scr_0269.jpg",
+        "scratch\\Scr_0365.jpg"
+      ],
+      [
+        "scratch\\Scr_0271.jpg",
+        "scratch\\Scr_0272.jpg",
+        "scratch\\Scr_0377.jpg",
+        "scratch\\Scr_0378.jpg",
+        "scratch\\Scr_0394.jpg"
+      ],
+      [
+        "scratch\\Scr_0273.jpg",
+        "scratch\\Scr_0274.jpg",
+        "scratch\\Scr_0280.jpg"
+      ],
+      [
+        "scratch\\Scr_0282.jpg",
+        "scratch\\Scr_0347.jpg",
+        "scratch\\Scr_0380.jpg"
+      ],
+      [
+        "scratch\\Scr_0309.jpg",
+        "scratch\\Scr_0320.jpg"
+      ],
+      [
+        "scratch\\Scr_0316.jpg",
+        "scratch\\Scr_0317.jpg"
+      ],
+      [
+        "scratch\\Scr_0330.jpg",
+        "scratch\\Scr_0331.jpg"
+      ],
+      [
+        "scratch\\Scr_0344.jpg",
+        "scratch\\Scr_0350.jpg"
+      ],
+      [
+        "stain\\Sta_0007.jpg",
+        "stain\\Sta_0076.jpg"
+      ],
+      [
+        "stain\\Sta_0009.jpg",
+        "stain\\Sta_0018.jpg",
+        "stain\\Sta_0060.jpg",
+        "stain\\Sta_0074.jpg",
+        "stain\\Sta_0078.jpg",
+        "stain\\Sta_0082.jpg"
+      ],
+      [
+        "stain\\Sta_0011.jpg",
+        "stain\\Sta_0029.jpg",
+        "stain\\Sta_0030.jpg",
+        "stain\\Sta_0031.jpg",
+        "stain\\Sta_0061.jpg",
+        "stain\\Sta_0069.jpg",
+        "stain\\Sta_0081.jpg"
+      ],
+      [
+        "stain\\Sta_0012.jpg",
+        "stain\\Sta_0017.jpg",
+        "stain\\Sta_0019.jpg",
+        "stain\\Sta_0020.jpg",
+        "stain\\Sta_0051.jpg",
+        "stain\\Sta_0064.jpg",
+        "stain\\Sta_0067.jpg",
+        "stain\\Sta_0068.jpg",
+        "stain\\Sta_0075.jpg",
+        "stain\\Sta_0079.jpg",
+        "stain\\Sta_0123.jpg",
+        "stain\\Sta_0124.jpg",
+        "stain\\Sta_0125.jpg",
+        "stain\\Sta_0136.jpg",
+        "stain\\Sta_0280.jpg",
+        "stain\\Sta_0281.jpg",
+        "stain\\Sta_0289.jpg",
+        "stain\\Sta_0291.jpg",
+        "stain\\Sta_0299.jpg",
+        "stain\\Sta_0308.jpg",
+        "stain\\Sta_0316.jpg",
+        "stain\\Sta_0317.jpg",
+        "stain\\Sta_0318.jpg",
+        "stain\\Sta_0319.jpg",
+        "stain\\Sta_0320.jpg",
+        "stain\\Sta_0362.jpg"
+      ],
+      [
+        "stain\\Sta_0021.jpg",
+        "stain\\Sta_0022.jpg",
+        "stain\\Sta_0025.jpg",
+        "stain\\Sta_0026.jpg",
+        "stain\\Sta_0027.jpg",
+        "stain\\Sta_0028.jpg"
+      ],
+      [
+        "stain\\Sta_0033.jpg",
+        "stain\\Sta_0035.jpg"
+      ],
+      [
+        "stain\\Sta_0034.jpg",
+        "stain\\Sta_0036.jpg",
+        "stain\\Sta_0055.jpg"
+      ],
+      [
+        "stain\\Sta_0037.jpg",
+        "stain\\Sta_0039.jpg"
+      ],
+      [
+        "stain\\Sta_0041.jpg",
+        "stain\\Sta_0043.jpg"
+      ],
+      [
+        "stain\\Sta_0042.jpg",
+        "stain\\Sta_0045.jpg"
+      ],
+      [
+        "stain\\Sta_0046.jpg",
+        "stain\\Sta_0048.jpg"
+      ],
+      [
+        "stain\\Sta_0058.jpg",
+        "stain\\Sta_0072.jpg"
+      ],
+      [
+        "stain\\Sta_0062.jpg",
+        "stain\\Sta_0080.jpg"
+      ],
+      [
+        "stain\\Sta_0063.jpg",
+        "stain\\Sta_0077.jpg"
+      ],
+      [
+        "stain\\Sta_0097.jpg",
+        "stain\\Sta_0098.jpg"
+      ],
+      [
+        "stain\\Sta_0106.jpg",
+        "stain\\Sta_0107.jpg"
+      ],
+      [
+        "stain\\Sta_0120.jpg",
+        "stain\\Sta_0333.jpg"
+      ],
+      [
+        "stain\\Sta_0127.jpg",
+        "stain\\Sta_0128.jpg",
+        "stain\\Sta_0135.jpg",
+        "stain\\Sta_0138.jpg",
+        "stain\\Sta_0140.jpg",
+        "stain\\Sta_0359.jpg",
+        "stain\\Sta_0360.jpg"
+      ],
+      [
+        "stain\\Sta_0129.jpg",
+        "stain\\Sta_0131.jpg",
+        "stain\\Sta_0271.jpg",
+        "stain\\Sta_0321.jpg"
+      ],
+      [
+        "stain\\Sta_0130.jpg",
+        "stain\\Sta_0134.jpg",
+        "stain\\Sta_0293.jpg",
+        "stain\\Sta_0297.jpg",
+        "stain\\Sta_0298.jpg"
+      ],
+      [
+        "stain\\Sta_0146.jpg",
+        "stain\\Sta_0147.jpg",
+        "stain\\Sta_0148.jpg",
+        "stain\\Sta_0149.jpg"
+      ],
+      [
+        "stain\\Sta_0151.jpg",
+        "stain\\Sta_0152.jpg",
+        "stain\\Sta_0153.jpg"
+      ],
+      [
+        "stain\\Sta_0190.jpg",
+        "stain\\Sta_0191.jpg",
+        "stain\\Sta_0192.jpg",
+        "stain\\Sta_0193.jpg"
+      ],
+      [
+        "stain\\Sta_0206.jpg",
+        "stain\\Sta_0207.jpg",
+        "stain\\Sta_0225.jpg",
+        "stain\\Sta_0226.jpg",
+        "stain\\Sta_0230.jpg",
+        "stain\\Sta_0231.jpg",
+        "stain\\Sta_0232.jpg"
+      ],
+      [
+        "stain\\Sta_0238.jpg",
+        "stain\\Sta_0239.jpg",
+        "stain\\Sta_0240.jpg",
+        "stain\\Sta_0241.jpg",
+        "stain\\Sta_0242.jpg"
+      ],
+      [
+        "stain\\Sta_0306.jpg",
+        "stain\\Sta_0307.jpg"
+      ],
+      [
+        "stain\\Sta_0386.jpg",
+        "stain\\Sta_0387.jpg"
+      ]
+    ],
+    "near_duplicate_count": 179633,
+    "near_duplicate_pairs": [
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "good\\0015.png",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "good\\0019.png",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0005.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0007.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0013.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0024.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0035.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0046.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0057.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0070.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0079.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0082.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0083.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0084.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0085.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0087.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0088.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0089.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0090.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0092.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0093.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0094.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0095.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0096.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0100.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0102.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0112.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0124.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0146.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0163.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0169.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0170.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0179.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0181.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0190.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0201.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0207.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0210.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0211.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0215.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0216.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0218.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0221.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0222.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0225.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0229.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0231.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0232.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0233.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0236.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0238.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0240.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0246.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0248.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0256.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0257.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0259.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0261.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0262.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0268.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0273.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0275.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0278.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0279.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0280.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0283.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0294.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0299.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0301.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0302.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0304.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0307.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0323.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0334.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0335.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0338.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0339.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0340.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0341.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0342.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0343.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0344.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0346.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0347.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0348.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0351.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0357.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0358.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0360.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0361.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0362.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0368.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0373.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0378.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0379.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0380.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0387.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0389.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0390.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "oil\\Oil_0397.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0072.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0074.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0170.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0171.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0172.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0173.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0174.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0175.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0182.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0183.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0196.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0201.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0202.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0203.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0205.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0207.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0212.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0268.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0281.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0312.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0337.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0343.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0356.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0359.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0362.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0363.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0364.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0369.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0370.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0371.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0385.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0386.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0387.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0393.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0398.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "scratch\\Scr_0399.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0002.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0003.jpg",
+        "hamming_distance": 1
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0004.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0005.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0007.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0009.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0010.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0012.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0017.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0018.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0019.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0020.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0051.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0052.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0053.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0060.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0062.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0064.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0065.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0066.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0067.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0068.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0074.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0075.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0076.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0078.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0079.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0080.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0082.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0105.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0109.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0123.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0124.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0125.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0126.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0130.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0132.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0133.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0134.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0136.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0208.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0209.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0210.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0211.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0214.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0215.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0216.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0217.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0218.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0219.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0220.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0221.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0222.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0223.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0224.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0227.jpg",
+        "hamming_distance": 4
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0228.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0229.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0233.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0234.jpg",
+        "hamming_distance": 3
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0235.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0236.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0237.jpg",
+        "hamming_distance": 2
+      },
+      {
+        "image_a": "good\\0002.png",
+        "image_b": "stain\\Sta_0243.jpg",
+        "hamming_distance": 2
+      }
+    ]
+  },
+  "conclusion": "Folder roles and mask mappings are explicit; conversion should preserve multiple mask lines per image and create empty labels for good images."
+}

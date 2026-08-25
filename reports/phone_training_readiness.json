@@ -1,0 +1,92 @@
+{
+  "dataset": "phone_detection",
+  "processed_root": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection",
+  "config_path": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\configs\\phone.yaml",
+  "required_paths": {
+    "images_train": true,
+    "images_val": true,
+    "images_test": true,
+    "labels_train": true,
+    "labels_val": true,
+    "labels_test": true,
+    "phone_yaml": true
+  },
+  "config_validation": {
+    "exists": true,
+    "valid": true,
+    "config": {
+      "path": "../processed/phone_detection",
+      "train": "images/train",
+      "val": "images/val",
+      "test": "images/test",
+      "nc": 1,
+      "names": [
+        "phone"
+      ]
+    },
+    "resolved_paths": {
+      "train": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection\\images\\train",
+      "val": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection\\images\\val",
+      "test": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection\\images\\test"
+    },
+    "errors": []
+  },
+  "splits": {
+    "train": {
+      "image_count": 70,
+      "label_count": 70,
+      "missing_labels": [],
+      "orphan_labels": [],
+      "invalid_labels": [],
+      "empty_labels": [],
+      "class_ids": {
+        "0": 82
+      },
+      "invalid_class_ids": [],
+      "zero_area_boxes": [],
+      "boxes_outside_normalized_range": [],
+      "invalid_coordinate_rows": [],
+      "unreadable_images": [],
+      "readiness": "PASS"
+    },
+    "val": {
+      "image_count": 15,
+      "label_count": 15,
+      "missing_labels": [],
+      "orphan_labels": [],
+      "invalid_labels": [],
+      "empty_labels": [],
+      "class_ids": {
+        "0": 15
+      },
+      "invalid_class_ids": [],
+      "zero_area_boxes": [],
+      "boxes_outside_normalized_range": [],
+      "invalid_coordinate_rows": [],
+      "unreadable_images": [],
+      "readiness": "PASS"
+    },
+    "test": {
+      "image_count": 15,
+      "label_count": 15,
+      "missing_labels": [],
+      "orphan_labels": [],
+      "invalid_labels": [],
+      "empty_labels": [],
+      "class_ids": {
+        "0": 15
+      },
+      "invalid_class_ids": [],
+      "zero_area_boxes": [],
+      "boxes_outside_normalized_range": [],
+      "invalid_coordinate_rows": [],
+      "unreadable_images": [],
+      "readiness": "PASS"
+    }
+  },
+  "all_class_ids": [
+    "0"
+  ],
+  "all_class_ids_are_zero": true,
+  "training_readiness": "PASS"
+}

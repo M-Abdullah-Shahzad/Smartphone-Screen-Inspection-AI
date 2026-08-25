@@ -1,0 +1,65 @@
+{
+  "decision": "ESCALATE_TO_PRIORITY_4",
+  "decision_date": "2026-08-24",
+  "route": [
+    "manual_4_corner_labeling",
+    "small_yolo_seg_screen_model"
+  ],
+  "training_performed": false,
+  "raw_data_modified": false,
+  "opencv_evaluation": {
+    "input_dir": "runs/phone/crop_check",
+    "output_dir": "runs/phone/screen_check",
+    "batch_images": 18,
+    "status_counts": {
+      "SCREEN_FOUND": 2,
+      "SCREEN_NOT_FOUND": 16
+    },
+    "success_count": 2,
+    "success_rate": 0.111,
+    "success_rate_percent": 11.1,
+    "strategy_usage_counts": {
+      "a": 1,
+      "b": 1,
+      "c": 0
+    },
+    "successful_filenames": [
+      "Datacluster Labs Phone Dataset (88)_crop.jpg",
+      "Datacluster Labs Phone Dataset (99)_crop.jpg"
+    ],
+    "dominant_failure": {
+      "reason": "area out of range",
+      "total_rejections": 1920,
+      "images_with_reason": 16,
+      "interpretation": "Contour fragmentation from wallpaper/reflections prevents a usable screen contour."
+    },
+    "per_image_diagnostics": [
+      {"filename": "crop_69.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 168, "failure_reasons": {"area out of range": 168}},
+      {"filename": "crop_77.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 39, "failure_reasons": {"area out of range": 37, "no quad found": 2}},
+      {"filename": "crop_96.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 202, "failure_reasons": {"area out of range": 201, "no quad found": 1}},
+      {"filename": "Datacluster Labs Phone Dataset (60)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 88, "failure_reasons": {"area out of range": 85, "no quad found": 3}},
+      {"filename": "Datacluster Labs Phone Dataset (63)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 107, "failure_reasons": {"area out of range": 104, "no quad found": 3}},
+      {"filename": "Datacluster Labs Phone Dataset (66)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 83, "failure_reasons": {"area out of range": 83}},
+      {"filename": "Datacluster Labs Phone Dataset (69)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 168, "failure_reasons": {"area out of range": 168}},
+      {"filename": "Datacluster Labs Phone Dataset (71)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 52, "failure_reasons": {"area out of range": 50, "no quad found": 2}},
+      {"filename": "Datacluster Labs Phone Dataset (74)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 21, "failure_reasons": {"area out of range": 18, "no quad found": 3}},
+      {"filename": "Datacluster Labs Phone Dataset (77)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 39, "failure_reasons": {"area out of range": 37, "no quad found": 2}},
+      {"filename": "Datacluster Labs Phone Dataset (8)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 72, "failure_reasons": {"area out of range": 72}},
+      {"filename": "Datacluster Labs Phone Dataset (82)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 584, "failure_reasons": {"area out of range": 581, "no quad found": 3}},
+      {"filename": "Datacluster Labs Phone Dataset (85)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 51, "failure_reasons": {"area out of range": 50, "no quad found": 1}},
+      {"filename": "Datacluster Labs Phone Dataset (88)_crop.jpg", "status": "SCREEN_FOUND", "contour_count": 4, "strategy": "b", "failure_reasons": {"no quad found": 3}},
+      {"filename": "Datacluster Labs Phone Dataset (90)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 61, "failure_reasons": {"area out of range": 60, "no quad found": 1}},
+      {"filename": "Datacluster Labs Phone Dataset (93)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 9, "failure_reasons": {"area out of range": 5, "no quad found": 4}},
+      {"filename": "Datacluster Labs Phone Dataset (96)_crop.jpg", "status": "SCREEN_NOT_FOUND", "contour_count": 202, "failure_reasons": {"area out of range": 201, "no quad found": 1}},
+      {"filename": "Datacluster Labs Phone Dataset (99)_crop.jpg", "status": "SCREEN_FOUND", "contour_count": 1, "strategy": "a", "failure_reasons": {}}
+    ]
+  },
+  "rationale": "OpenCV screen localization is rejected after the debug/relaxation pass because SCREEN_FOUND occurred for only 2 of 18 images (11.1%), and the dominant recorded rejection is area out of range from fragmented contours caused by wallpaper/reflections. Manual four-corner labels provide reliable screen polygons for training a small YOLO segmentation model.",
+  "label_tool": {
+    "path": "src/screen/label_screen_tool.py",
+    "format": "YOLO segmentation",
+    "class_id_default": 0,
+    "corner_order": ["TL", "TR", "BR", "BL"],
+    "resume_support": true
+  }
+}

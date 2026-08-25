@@ -1,0 +1,31 @@
+{
+  "overall": "PASS",
+  "checks": {
+    "phone_pairs_remain_together": {
+      "status": "PASS",
+      "invalid_pairs": []
+    },
+    "similarity_groups_single_split": {
+      "status": "PASS",
+      "groups_crossing_splits": 0
+    },
+    "source_images_single_split": {
+      "status": "PASS",
+      "assigned": 1220,
+      "records": 1220
+    },
+    "masks_same_split_as_source": {
+      "status": "PASS",
+      "mismatches": []
+    },
+    "masks_not_independent_images": {
+      "status": "PASS",
+      "mask_files_in_processed_images": []
+    },
+    "exact_duplicates_not_across_splits": {
+      "status": "PASS",
+      "cross_split_exact_duplicate_groups": []
+    }
+  },
+  "random_seed": 42
+}

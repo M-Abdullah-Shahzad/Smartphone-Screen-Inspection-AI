@@ -1,0 +1,74 @@
+{
+  "python_executable": "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\python.exe",
+  "direct_cv2_import": {
+    "status": "PASS",
+    "version": "4.10.0",
+    "path": "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\cv2\\__init__.py"
+  },
+  "numpy": {
+    "status": "PASS",
+    "version": "2.4.6",
+    "path": "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\numpy\\__init__.py"
+  },
+  "torch": {
+    "status": "PASS",
+    "version": "2.13.0+cpu",
+    "path": "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\torch\\__init__.py"
+  },
+  "ultralytics": {
+    "status": "PASS",
+    "version": "8.4.127",
+    "path": "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\ultralytics\\__init__.py"
+  },
+  "PIL": {
+    "status": "PASS",
+    "version": "12.3.0",
+    "path": "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\PIL\\__init__.py"
+  },
+  "yaml": {
+    "status": "PASS",
+    "version": "6.0.3",
+    "path": "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\yaml\\__init__.py"
+  },
+  "opencv_packages": {
+    "opencv-python": {
+      "installed": true,
+      "version": "4.10.0.84"
+    },
+    "opencv-python-headless": {
+      "installed": false
+    },
+    "opencv-contrib-python": {
+      "installed": false
+    },
+    "opencv-contrib-python-headless": {
+      "installed": false
+    }
+  },
+  "cv2_file_locations": [
+    "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\cv2\\__init__.py",
+    "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\cv2\\cv2.pyd",
+    "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\cv2\\config.py",
+    "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\cv2\\config-3.py",
+    "C:\\Users\\hp\\anaconda3\\envs\\phone-defect-ai\\Lib\\site-packages\\cv2\\opencv_videoio_ffmpeg4100_64.dll"
+  ],
+  "train_phone_import_path_findings": {
+    "direct_cv2_imports": [],
+    "indirect_cv2_imports": [
+      "main() imports ultralytics.YOLO",
+      "Ultralytics imports cv2 during package initialization"
+    ],
+    "sys_path_changes": false,
+    "launches_another_python_process": false,
+    "uses_different_interpreter": false,
+    "import_only_test": "PASS: import cv2, numpy, torch, ultralytics completed without constructing a model or training"
+  },
+  "exact_failure_point": {
+    "historical_error": "ImportError: DLL load failed while importing cv2: The specified procedure could not be found.",
+    "failure_location": "from ultralytics import YOLO in train_phone.py main(), during indirect cv2 initialization",
+    "current_reproduction": "FAILURE NOT REPRODUCED; direct cv2 and the same dependency import path currently pass"
+  },
+  "root_cause_assessment": "The prior failure was a Windows binary OpenCV environment conflict/inconsistent installation, previously involving Conda headless OpenCV components alongside pip OpenCV. The current environment has only opencv-python 4.10.0.84 and imports successfully.",
+  "recommended_minimal_fix": "No code fix is indicated. Keep one clean environment with only opencv-python, and rerun the training startup check using the exact interpreter after confirming the environment is active.",
+  "changes_made": "Diagnostic report only; no packages, project files, datasets, or processed data were modified."
+}

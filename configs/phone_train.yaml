@@ -1,0 +1,14 @@
+# Conservative baseline profile for the small phone detection dataset.
+model: yolo11n.pt
+data: configs/phone.yaml
+epochs: 80
+imgsz: 640
+batch: -1
+seed: 42
+patience: 20
+pretrained: true
+project: runs/phone
+name: phone_yolo11n_baseline
+device: auto
+workers: 2
+plots: true

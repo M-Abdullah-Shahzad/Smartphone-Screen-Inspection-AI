@@ -1,0 +1,5 @@
+phone_confidence_too_far: 0.25
+screen_confidence_uncertain: 0.50
+defect_confidence_real: 0.25
+defect_confidence_uncertain: 0.10
+blur_score_poor: 50.0

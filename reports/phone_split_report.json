@@ -1,0 +1,30 @@
+{
+  "dataset": "phone_detection",
+  "source": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\datasets\\phone_dataset",
+  "processed_root": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\phone_detection",
+  "train_count": 70,
+  "val_count": 15,
+  "test_count": 15,
+  "total": 100,
+  "class_distribution": {
+    "phone": 112
+  },
+  "clipped_box_count": 28,
+  "invalid_box_count": 0,
+  "invalid_pairs": [],
+  "images_successfully_copied": 100,
+  "failed_image_copies": [],
+  "unreadable_processed_images": [],
+  "image_label_parity": {
+    "train": true,
+    "val": true,
+    "test": true
+  },
+  "random_seed": 42,
+  "split_percentages": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "annotation_format": "YOLO detection, class 0 = phone"
+}

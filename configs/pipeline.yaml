@@ -1,0 +1,4 @@
+phone: models/phone/phone_yolo11n_baseline_best.pt
+screen: models/screen/screen_yolo11n_baseline_best.pt
+defect: models/defect/defect_yolo11n_baseline_best.pt
+defect: models/defect/defect_yolo11n_real_best.pt 

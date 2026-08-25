@@ -1,0 +1,44 @@
+{
+  "input_dir": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\pipeline_test",
+  "total_images_processed": 15,
+  "files_found": 15,
+  "unreadable_files": [],
+  "decision_counts": {
+    "MULTIPLE": 6,
+    "OIL": 3,
+    "POOR_IMAGE_QUALITY": 6
+  },
+  "images_by_decision": {
+    "MULTIPLE": [
+      "Datacluster Labs Phone Dataset (60).jpg",
+      "Datacluster Labs Phone Dataset (63).jpg",
+      "Datacluster Labs Phone Dataset (71).jpg",
+      "Datacluster Labs Phone Dataset (8).jpg",
+      "Datacluster Labs Phone Dataset (82).jpg",
+      "Datacluster Labs Phone Dataset (88).jpg"
+    ],
+    "OIL": [
+      "Datacluster Labs Phone Dataset (69).jpg",
+      "Datacluster Labs Phone Dataset (96).jpg",
+      "Datacluster Labs Phone Dataset (99).jpg"
+    ],
+    "POOR_IMAGE_QUALITY": [
+      "Datacluster Labs Phone Dataset (66).jpg",
+      "Datacluster Labs Phone Dataset (74).jpg",
+      "Datacluster Labs Phone Dataset (77).jpg",
+      "Datacluster Labs Phone Dataset (85).jpg",
+      "Datacluster Labs Phone Dataset (90).jpg",
+      "Datacluster Labs Phone Dataset (93).jpg"
+    ]
+  },
+  "averages": {
+    "blur_score": 129.61883182611828,
+    "screen_confidence": 0.8801656444867452,
+    "defect_area_percent": 52.45217013888889
+  },
+  "observations": {
+    "blur_scores_available": 15,
+    "screen_confidences_available": 15,
+    "defect_areas_available": 15
+  }
+}

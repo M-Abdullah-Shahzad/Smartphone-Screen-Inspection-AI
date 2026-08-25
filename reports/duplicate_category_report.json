@@ -1,0 +1,577 @@
+{
+  "good__good": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 30,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "0005.png",
+        "image_b": "0009.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "0010.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "0012.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "0016.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "0017.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "0007.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "0008.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "0014.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "0018.png",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "0020.png",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "oil__oil": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 1154,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0163.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0179.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0211.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0231.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0233.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0275.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0335.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0358.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Oil_0373.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0010.jpg",
+        "image_b": "Oil_0012.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "scratch__scratch": {
+    "exact_duplicate_count": 1,
+    "near_duplicate_count": 14130,
+    "exact_duplicate_examples": [
+      {
+        "image_a": "Scr_0075.jpg",
+        "image_b": "Scr_0159.jpg"
+      }
+    ],
+    "near_duplicate_examples": [
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0013.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0026.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0027.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0029.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0030.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0031.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0032.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0033.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0034.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Scr_0035.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "stain__stain": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 3315,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "Sta_0002.jpg",
+        "image_b": "Sta_0003.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0215.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0216.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0217.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0218.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0219.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0220.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0221.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0004.jpg",
+        "image_b": "Sta_0222.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Sta_0007.jpg",
+        "image_b": "Sta_0076.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "good__oil": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 331,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "0002.png",
+        "image_b": "Oil_0228.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0004.png",
+        "image_b": "Oil_0182.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0004.png",
+        "image_b": "Oil_0375.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Oil_0086.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Oil_0098.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Oil_0183.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Oil_0184.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Oil_0186.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Oil_0189.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Oil_0191.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "good__scratch": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 1249,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0070.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0076.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0186.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0187.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0188.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0189.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0191.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0192.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0193.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0005.png",
+        "image_b": "Scr_0194.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "good__stain": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 339,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "0004.png",
+        "image_b": "Sta_0276.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0004.png",
+        "image_b": "Sta_0327.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0083.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0084.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0085.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0086.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0087.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0088.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0089.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "0006.png",
+        "image_b": "Sta_0091.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "oil__scratch": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 5497,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Scr_0072.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0013.jpg",
+        "image_b": "Scr_0074.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0013.jpg",
+        "image_b": "Scr_0201.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0013.jpg",
+        "image_b": "Scr_0203.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0013.jpg",
+        "image_b": "Scr_0393.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0014.jpg",
+        "image_b": "Scr_0002.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0014.jpg",
+        "image_b": "Scr_0013.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0014.jpg",
+        "image_b": "Scr_0026.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0014.jpg",
+        "image_b": "Scr_0027.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0014.jpg",
+        "image_b": "Scr_0029.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "oil__stain": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 2131,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "Oil_0002.jpg",
+        "image_b": "Sta_0008.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0005.jpg",
+        "image_b": "Sta_0105.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0005.jpg",
+        "image_b": "Sta_0109.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0005.jpg",
+        "image_b": "Sta_0278.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0005.jpg",
+        "image_b": "Sta_0279.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Sta_0132.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Sta_0133.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Sta_0294.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Sta_0295.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Oil_0007.jpg",
+        "image_b": "Sta_0311.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  },
+  "scratch__stain": {
+    "exact_duplicate_count": 0,
+    "near_duplicate_count": 8906,
+    "exact_duplicate_examples": [],
+    "near_duplicate_examples": [
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0083.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0084.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0085.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0086.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0087.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0088.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0089.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0091.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0092.jpg",
+        "hamming_distance": 0
+      },
+      {
+        "image_a": "Scr_0002.jpg",
+        "image_b": "Sta_0093.jpg",
+        "hamming_distance": 0
+      }
+    ]
+  }
+}

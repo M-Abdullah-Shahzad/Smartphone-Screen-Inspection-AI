@@ -1,0 +1,123 @@
+{
+  "SOURCE_COUNTS": {
+    "historical_phase2_claimed_out_of_bounds_boxes": 13,
+    "phase2_report_out_of_bounds_records": 28,
+    "phase2_unique_affected_annotations": 28,
+    "phone_box_review_details": 28,
+    "phase2_5_report_total_affected": 28,
+    "phone_box_visualization_files": 28,
+    "phone_box_visualization_pairs": 28,
+    "unique_affected_annotation_names": [
+      "Datacluster Labs Phone Dataset (100).xml",
+      "Datacluster Labs Phone Dataset (16).xml",
+      "Datacluster Labs Phone Dataset (17).xml",
+      "Datacluster Labs Phone Dataset (19).xml",
+      "Datacluster Labs Phone Dataset (29).xml",
+      "Datacluster Labs Phone Dataset (33).xml",
+      "Datacluster Labs Phone Dataset (38).xml",
+      "Datacluster Labs Phone Dataset (4).xml",
+      "Datacluster Labs Phone Dataset (40).xml",
+      "Datacluster Labs Phone Dataset (44).xml",
+      "Datacluster Labs Phone Dataset (45).xml",
+      "Datacluster Labs Phone Dataset (47).xml",
+      "Datacluster Labs Phone Dataset (49).xml",
+      "Datacluster Labs Phone Dataset (5).xml",
+      "Datacluster Labs Phone Dataset (53).xml",
+      "Datacluster Labs Phone Dataset (55).xml",
+      "Datacluster Labs Phone Dataset (56).xml",
+      "Datacluster Labs Phone Dataset (57).xml",
+      "Datacluster Labs Phone Dataset (61).xml",
+      "Datacluster Labs Phone Dataset (64).xml",
+      "Datacluster Labs Phone Dataset (66).xml",
+      "Datacluster Labs Phone Dataset (69).xml",
+      "Datacluster Labs Phone Dataset (74).xml",
+      "Datacluster Labs Phone Dataset (81).xml",
+      "Datacluster Labs Phone Dataset (85).xml",
+      "Datacluster Labs Phone Dataset (86).xml",
+      "Datacluster Labs Phone Dataset (89).xml",
+      "Datacluster Labs Phone Dataset (97).xml"
+    ]
+  },
+  "INTERPRETATION": {
+    "what_28_represents": "28 unique affected phone annotations, 28 phone-box review records, and 28 phone-box visualization pairs/files.",
+    "historical_13_status": "Not reproduced by the current Phase 2 report; the current report contains 28 out-of-bounds records and 28 unique annotation names.",
+    "phase2_5_ready_for_phase3": false,
+    "readiness_reason": "The count discrepancy with the historical Phase 2 value of 13 must be resolved before Phase 3."
+  },
+  "DUPLICATE_COUNTS_BY_CATEGORY": {
+    "good__good": {
+      "exact_duplicates": 0,
+      "near_duplicates": 30
+    },
+    "oil__oil": {
+      "exact_duplicates": 0,
+      "near_duplicates": 1154
+    },
+    "scratch__scratch": {
+      "exact_duplicates": 1,
+      "near_duplicates": 14130
+    },
+    "stain__stain": {
+      "exact_duplicates": 0,
+      "near_duplicates": 3315
+    },
+    "good__oil": {
+      "exact_duplicates": 0,
+      "near_duplicates": 331
+    },
+    "good__scratch": {
+      "exact_duplicates": 0,
+      "near_duplicates": 1249
+    },
+    "good__stain": {
+      "exact_duplicates": 0,
+      "near_duplicates": 339
+    },
+    "oil__scratch": {
+      "exact_duplicates": 0,
+      "near_duplicates": 5497
+    },
+    "oil__stain": {
+      "exact_duplicates": 0,
+      "near_duplicates": 2131
+    },
+    "scratch__stain": {
+      "exact_duplicates": 0,
+      "near_duplicates": 8906
+    }
+  },
+  "CROSS_CLASS_EXACT_DUPLICATES": {
+    "good__oil": 0,
+    "good__scratch": 0,
+    "good__stain": 0,
+    "oil__scratch": 0,
+    "oil__stain": 0,
+    "scratch__stain": 0
+  },
+  "CROSS_CLASS_NEAR_DUPLICATES": {
+    "good__oil": 331,
+    "good__scratch": 1249,
+    "good__stain": 339,
+    "oil__scratch": 5497,
+    "oil__stain": 2131,
+    "scratch__stain": 8906
+  },
+  "WITHIN_CLASS_DUPLICATES": {
+    "good__good": {
+      "exact_duplicates": 0,
+      "near_duplicates": 30
+    },
+    "oil__oil": {
+      "exact_duplicates": 0,
+      "near_duplicates": 1154
+    },
+    "scratch__scratch": {
+      "exact_duplicates": 1,
+      "near_duplicates": 14130
+    },
+    "stain__stain": {
+      "exact_duplicates": 0,
+      "near_duplicates": 3315
+    }
+  }
+}

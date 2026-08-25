@@ -1,0 +1,38 @@
+{
+  "PHONE_BOX_REVIEW": {
+    "total_affected": 28,
+    "valid_after_clipping": 28,
+    "invalid_after_clipping": 0,
+    "notes": "The phone bounding boxes that cross image edges are clipped to valid image extents without discarding the object; none require manual rejection."
+  },
+  "DEFECT_DUPLICATE_REVIEW": {
+    "exact_duplicates_by_category": {
+      "good__good": 0,
+      "oil__oil": 0,
+      "scratch__scratch": 1,
+      "stain__stain": 0,
+      "good__oil": 0,
+      "good__scratch": 0,
+      "good__stain": 0,
+      "oil__scratch": 0,
+      "oil__stain": 0,
+      "scratch__stain": 0
+    },
+    "near_duplicates_by_category": {
+      "good__good": 30,
+      "oil__oil": 1154,
+      "scratch__scratch": 14130,
+      "stain__stain": 3315,
+      "good__oil": 331,
+      "good__scratch": 1249,
+      "good__stain": 339,
+      "oil__scratch": 5497,
+      "oil__stain": 2131,
+      "scratch__stain": 8906
+    },
+    "interpretation": {
+      "purpose": "Review whether the near duplicates represent true repeated samples or class-relationship artifacts from the labeling pipeline.",
+      "note": "The counts are intentionally reported by class pair to separate within-class repetition from cross-class label ambiguity."
+    }
+  }
+}
