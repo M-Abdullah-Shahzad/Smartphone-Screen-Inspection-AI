@@ -28,7 +28,7 @@
     "speed": {
       "preprocess": 2.0842799994473657,
       "inference": 107.66190000188848,
-      "loss": 8.00006091594696e-05,
+      "loss": 0.0000800006091594696,
       "postprocess": 3.2231266687934594
     }
   },
@@ -40,7 +40,7 @@
     "speed": {
       "preprocess": 1.5468866641943655,
       "inference": 80.17232000517348,
-      "loss": 6.665941327810287e-05,
+      "loss": 0.00006665941327810287,
       "postprocess": 1.969173333297173
     }
   },
@@ -54,20 +54,20 @@
     "gpu_vram_gb": null
   },
   "best_epoch": "23",
-  "best_weights_path": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\models\\phone\\phone_yolo11n_baseline_best.pt",
-  "last_weights_path": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\models\\phone\\phone_yolo11n_baseline_last.pt",
+  "best_weights_path": "models/phone/phone_yolo11n_baseline_best.pt",
+  "last_weights_path": "models/phone/phone_yolo11n_baseline_last.pt",
   "training_duration_seconds": 2027.136,
   "inference_speed": {
     "validation": {
       "preprocess": 2.0842799994473657,
       "inference": 107.66190000188848,
-      "loss": 8.00006091594696e-05,
+      "loss": 0.0000800006091594696,
       "postprocess": 3.2231266687934594
     },
     "test": {
       "preprocess": 1.5468866641943655,
       "inference": 80.17232000517348,
-      "loss": 6.665941327810287e-05,
+      "loss": 0.00006665941327810287,
       "postprocess": 1.969173333297173
     }
   },
@@ -76,12 +76,12 @@
     "Train/validation mAP50-95 gap is -0.3580 (0.5689 vs 0.9269); no large overfitting gap observed."
   ],
   "warnings_errors": [],
-  "run_directory": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\phone\\phone_yolo11n_baseline",
+  "run_directory": "runs/phone/phone_yolo11n_baseline",
   "artifacts": {
-    "training_curves": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\phone\\phone_yolo11n_baseline\\results.png",
-    "validation_confusion_matrix": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\phone\\phone_yolo11n_baseline\\validation\\confusion_matrix.png",
-    "test_confusion_matrix": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\phone\\phone_yolo11n_baseline\\test\\confusion_matrix.png",
-    "validation_predictions": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\phone\\phone_yolo11n_baseline\\predictions_val",
-    "test_predictions": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\phone\\phone_yolo11n_baseline\\predictions_test"
+    "training_curves": "runs/phone/phone_yolo11n_baseline/results.png",
+    "validation_confusion_matrix": "runs/phone/phone_yolo11n_baseline/validation/confusion_matrix.png",
+    "test_confusion_matrix": "runs/phone/phone_yolo11n_baseline/test/confusion_matrix.png",
+    "validation_predictions": "runs/phone/phone_yolo11n_baseline/predictions_val",
+    "test_predictions": "runs/phone/phone_yolo11n_baseline/predictions_test"
   }
 }
