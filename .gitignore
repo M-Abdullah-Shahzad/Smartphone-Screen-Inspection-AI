@@ -16,3 +16,8 @@ datasets/
 # Colab / temporary files
 content/
 temp/
+# Large generated visual review artifacts
+reports/visualizations/
+reports/phase2_validation_report.json
+
+# Temporary local data and model exports

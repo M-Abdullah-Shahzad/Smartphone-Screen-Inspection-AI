@@ -1,5 +1,5 @@
 {
-  "input_dir": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\pipeline_test",
+  "input_dir": "runs/pipeline_test",
   "total_images_processed": 15,
   "files_found": 15,
   "unreadable_files": [],
