@@ -1,4 +1,4 @@
-path: C:\Users\hp\Desktop\mobile_phone_defect_ai\processed\defect_segmentation
+path: ../processed/defect_segmentation
 train: images/train
 val: images/val
 test: images/test
