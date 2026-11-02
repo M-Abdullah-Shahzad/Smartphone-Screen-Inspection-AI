@@ -2,7 +2,7 @@
   "model": "yolo11n-seg.pt",
   "experiment_name": "defect_yolo11n_baseline",
   "task": "segment",
-  "dataset_root": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\processed\\defect_segmentation",
+  "dataset_root": "processed/defect_segmentation",
   "validation_metrics": {
     "precision": 0.8933861177839703,
     "recall": 0.8710893031070183,
@@ -34,7 +34,7 @@
       "loss": 0.00019750150386244059,
       "postprocess": 4.751874998328276
     },
-    "evaluation_directory": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\defect\\defect_yolo11n_baseline\\val_evaluation"
+    "evaluation_directory": "runs/defect/defect_yolo11n_baseline/val_evaluation"
   },
   "test_metrics": {
     "precision": 0.8569266299512434,
@@ -50,7 +50,7 @@
       },
       "oil": {
         "precision": 0.9604281662747411,
-        "recall": 1.0,
+        "recall": 1,
         "mAP50": 0.9715,
         "mAP50-95": 0.8090785754884035
       },
@@ -67,7 +67,7 @@
       "loss": 0.000167348213037666,
       "postprocess": 4.5805387745364285
     },
-    "evaluation_directory": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\defect\\defect_yolo11n_baseline\\test_evaluation"
+    "evaluation_directory": "runs/defect/defect_yolo11n_baseline/test_evaluation"
   },
   "training_environment": {
     "python": "3.11.15",
@@ -76,7 +76,7 @@
     "ultralytics": "8.4.127",
     "cuda_available": false
   },
-  "weights_path": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\models\\defect\\defect_yolo11n_baseline_best.pt",
-  "run_directory": "C:\\Users\\hp\\Desktop\\mobile_phone_defect_ai\\runs\\defect\\defect_yolo11n_baseline",
+  "weights_path": "models/defect/defect_yolo11n_baseline_best.pt",
+  "run_directory": "runs/defect/defect_yolo11n_baseline",
   "training_duration_seconds": 11527.589
 }
