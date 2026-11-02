@@ -21,4 +21,3 @@ reports/visualizations/
 reports/phase2_validation_report.json
 
 # Temporary local data and model exports
-*.pt
